@@ -1,6 +1,10 @@
 # shoma3571-sandbox
 This is a repository where you can store all the code you have written and put your research notes in Discussions.
 
+## directories
+- c++
+	- We keep the code we wrote for competition programming.
+
 ## discussions
 - Figma Tokens
 	- https://github.com/shoma3571/shoma3571-sandbox/discussions/1
