@@ -6,6 +6,8 @@ This is a repository where you can store all the code you have written and put y
 	- We keep the code we wrote for competition programming.
 - go
 	- Store simple web apps, etc. that you made when you were learning Go.
+- typescript
+	- Store tried-and-true code, whether front-end or back-end
 
 ## discussions
 - Figma Tokens
