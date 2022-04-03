@@ -8,6 +8,8 @@ This is a repository where you can store all the code you have written and put y
 	- Store simple web apps, etc. that you made when you were learning Go.
 - typescript
 	- Store tried-and-true code, whether front-end or back-end
+- kotlin
+	- Stores code for back-end APIs, etc.
 
 ## discussions
 - Figma Tokens
