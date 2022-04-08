@@ -24,3 +24,7 @@ This is a repository where you can store all the code you have written and put y
 - go-webapp-tutorial
 	- https://github.com/shoma3571/shoma3571-sandbox/discussions/3
 	- This is the content of the official Go web app creation tutorial
+
+- EVERY LAYOUT
+	- https://github.com/shoma3571/shoma3571-sandbox/discussions/4
+	- Leave a note on reading EVERY LAYOUT
