@@ -1,0 +1,25 @@
+:root {
+  --font-size-base: 1rem;
+  --font-size-biggish: 1.75rem;
+  --font-size-big: 2.25rem;
+}
+
+h2 {
+  font-size: var(--font-size-big);
+}
+
+h3 {
+  font-size: var(--font-size-biggish);
+}
+
+.font-size\:base {
+  font-size: var(--font-size-base) !important;
+}
+
+.font-size\:biggish {
+  font-size: var(--font-size-biggish) !important;
+}
+
+.font-size\:big {
+  font-size: var(--font-size-big) !important;
+}
