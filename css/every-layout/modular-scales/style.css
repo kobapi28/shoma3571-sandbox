@@ -1,0 +1,10 @@
+:root {
+  --radio: 1.5rem;
+  --s-3: calc(var(--s-2) / var(--radio));
+  --s-2: calc(var(--s-1) / var(--radio));
+  --s-1: calc(var(--s0) / var(--radio));
+  --s0: 1rem;
+  --s1: calc(var(--s0) * var(--radio));
+  --s2: calc(var(--s1) * var(--radio));
+  --s3: calc(var(--s2) * var(--radio));
+}
