@@ -12,6 +12,10 @@ This is a repository where you can store all the code you have written and put y
 	- Stores code for back-end APIs, etc.
 
 ## discussions
+- いろいろな記事を読んだ感想
+	- https://github.com/shoma3571/shoma3571-sandbox/discussions/6
+	- This is a discussion in which we translate and summarize various articles, including those that have been circulated on Twitter.
+
 - Figma Tokens
 	- https://github.com/shoma3571/shoma3571-sandbox/discussions/1
 	- I was interested in how to connect design and implementation, so I researched this area and summarized it in the discussion.
