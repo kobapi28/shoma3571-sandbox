@@ -1,25 +1,38 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Header } from './components/Header';
+import { Search } from './components/Search';
+import { TodoList } from './components/TodoList';
+import { Todo } from './types/todo';
+
+const items: Todo[] = [
+  {
+    id: 'hogehoge',
+    title: 'hoge',
+    date: new Date(),
+    badge: ['hoge', 'fuga'],
+    isFinished: false
+  },
+  {
+    id: 'hogehogehoge',
+    title: 'hoge',
+    date: new Date(),
+    badge: ['hoge', 'fuga'],
+    isFinished: false
+  },
+  {
+    id: 'aaa',
+    title: 'hoge',
+    date: new Date(),
+    badge: ['hoge', 'fuga'],
+    isFinished: false
+  }
+]
 
 function App() {
   return (
-    <div className='App'>
-      <header className='App-header'>
-        <img src={logo} className='App-logo' alt='logo' />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className='App-link'
-          href='https://reactjs.org'
-          target='_blank'
-          rel='noopener noreferrer'
-        >
-          Learn React
-        </a>
-        <p>test</p>
-      </header>
+    <div>
+      <Header/>
+      <Search/>
+      <TodoList items={items}/>
     </div>
   );
 }
