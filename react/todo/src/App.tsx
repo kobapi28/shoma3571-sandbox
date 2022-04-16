@@ -1,39 +1,23 @@
+import React, { createContext, useState } from 'react';
+import { AddTodo } from './components/AddTodo';
 import { Header } from './components/Header';
-import { Search } from './components/Search';
 import { TodoList } from './components/TodoList';
 import { Todo } from './types/todo';
 
-const items: Todo[] = [
-  {
-    id: 'hogehoge',
-    title: 'hoge',
-    date: new Date(),
-    badge: ['hoge', 'fuga'],
-    isFinished: false
-  },
-  {
-    id: 'hogehogehoge',
-    title: 'hoge',
-    date: new Date(),
-    badge: ['hoge', 'fuga'],
-    isFinished: false
-  },
-  {
-    id: 'aaa',
-    title: 'hoge',
-    date: new Date(),
-    badge: ['hoge', 'fuga'],
-    isFinished: false
-  }
-]
+type TodoProvider = {
+  items: Todo[];
+  setItems: React.Dispatch<React.SetStateAction<Todo[]>>
+}
+export const TodoContext = createContext<TodoProvider>({} as TodoProvider);
 
 function App() {
+  const [items, setItems] = useState<Todo[]>([])
   return (
-    <div>
-      <Header/>
-      <Search/>
-      <TodoList items={items}/>
-    </div>
+      <TodoContext.Provider value={{items, setItems}}>
+        <Header/>
+        <AddTodo/>
+        <TodoList items={items}/>
+      </TodoContext.Provider>
   );
 }
 
