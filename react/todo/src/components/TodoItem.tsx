@@ -6,13 +6,11 @@ type Props = {
 
 export const TodoItem: React.VFC<Props> = ({ item }) => {
   return (
-    <>
+    <div>
       <label htmlFor={'title' + item.id}>{item.title}</label>
       <input type='checkbox' id={'title' + item.id}/>
       <p>{item.date.toLocaleDateString()}</p>
-      {item.badge.map((b) => {
-        return <span>{b}</span>
-      })}
-    </>
+      <p>{item.badge}</p>
+    </div>
   )
 } 

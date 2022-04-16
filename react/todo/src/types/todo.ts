@@ -2,6 +2,6 @@ export type Todo = {
   id: string;
   title: string;
   date: Date;
-  badge: string[];
+  badge: string;
   isFinished: boolean;
 }
