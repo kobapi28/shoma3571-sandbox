@@ -6,7 +6,7 @@ import { Todo } from './types/todo';
 
 type TodoProvider = {
   items: Todo[];
-  setItems: React.Dispatch<React.SetStateAction<Todo[]>>
+  setItems: React.Dispatch<React.SetStateAction<Todo[]>>;
 }
 export const TodoContext = createContext<TodoProvider>({} as TodoProvider);
 

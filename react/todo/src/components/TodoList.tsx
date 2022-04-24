@@ -8,8 +8,8 @@ type Props = {
 export const TodoList: React.VFC<Props> = ({ items }) => {
   return (
     <div>
-      {items.map(item => {
-      return <TodoItem item={item} key={item.id}/>
+      {items.map((item, index) => {
+      return <TodoItem item={item} key={item.id} index={index}/>
     })}
     </div>
   )
