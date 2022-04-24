@@ -16,7 +16,10 @@ function App() {
       <TodoContext.Provider value={{items, setItems}}>
         <Header/>
         <AddTodo/>
-        <TodoList items={items}/>
+        <div style={{display: 'flex'}}>
+          <TodoList items={items.filter(item => !item.isFinished)}/>
+          <TodoList items={items.filter(item => item.isFinished)}/>
+        </div>
       </TodoContext.Provider>
   );
 }
