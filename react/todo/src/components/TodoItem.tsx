@@ -13,7 +13,7 @@ export const TodoItem: React.VFC<Props> = ({ item, index }) => {
     const items: Todo[] = context.items;
     const updatedItems = items.map((item) => {
       if (item.id === id) {
-        item.isFinished = true;
+        item.isFinished = !item.isFinished;
       }
       return item
     })
@@ -25,8 +25,7 @@ export const TodoItem: React.VFC<Props> = ({ item, index }) => {
       <p>{item.title}</p>
       <p>{item.date.toLocaleDateString()}</p>
       <p>{item.badge}</p>
-      <p>{item.isFinished ? '完了': '未完了'}</p>
-      <button onClick={() => updateStatus(item.id)}>DONE!</button>
+      <button onClick={() => updateStatus(item.id)}>{item.isFinished ? '未完了に戻す': '完了！'}</button>
     </div>
   )
 } 
