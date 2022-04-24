@@ -32,3 +32,7 @@ This is a repository where you can store all the code you have written and put y
 - EVERY LAYOUT
 	- https://github.com/shoma3571/shoma3571-sandbox/discussions/4
 	- Leave a note on reading EVERY LAYOUT
+
+- UXデザインの法則
+  - https://github.com/shoma3571/shoma3571-sandbox/discussions/8
+  - Leave a note on reading Laws of UX 
