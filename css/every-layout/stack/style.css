@@ -14,26 +14,12 @@
 }
 
 
-.stack {
+stack-l {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
 
-.stack > * {
-  /* 既存の垂直方向のマージンを削除 */
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.stack > * + * {
-  /* 連続する要素だけに上方向のマージンを適用 */
-  margin-top: 1.5rem;
-}
-
-/* --- */
-
-.box {
-  border: 1px solid black;
-  padding: 1.5rem;
+stack-l > * + * {
+  margin-block-start: var(--s1);
 }
